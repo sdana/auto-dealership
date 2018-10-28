@@ -1282,16 +1282,16 @@ const yearlyFigures = [
     }
 ]
 
-const bestSalesMonth = () => {
-    const datesArray = []
-    yearlyFigures.forEach((sale, index) =>{
-        datesArray.push(yearlyFigures[index].purchase_date)
-    })
-    let noYearArr = []
-    for (let i=0; i<datesArray.length; i++){
-        noYearArr.push(`${datesArray[i].slice(5,7)}`)
-    }
-    noYearArr.sort((a,b) => {return a-b})
-    console.log(noYearArr)
-}
-bestSalesMonth()
+// const bestSalesMonth = () => {
+//     const datesArray = []
+//     yearlyFigures.forEach((sale, index) =>{
+//         datesArray.push(yearlyFigures[index].purchase_date)
+//     })
+//     let noYearArr = []
+//     for (let i=0; i<datesArray.length; i++){
+//         noYearArr.push(`${datesArray[i].slice(5,7)}`)
+//     }
+//     noYearArr.sort((a,b) => {return a-b})
+//     console.log(noYearArr)
+// }
+// bestSalesMonth()
